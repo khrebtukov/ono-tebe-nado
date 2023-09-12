@@ -1,8 +1,9 @@
 /* место для вашего кода */
 
-body{
+body {
     background: black;
     width: 1440px;
+    height: 2844px;
     margin: auto;
 }
 
@@ -264,7 +265,7 @@ body{
     background: center / cover no-repeat url("../images/card-lot-03.jpg");
 }
 
-.lot_cards-item-title{
+.lot_cards-item-title {
     font-size: 22px;
     font-weight: 700;
     text-decoration-line: underline;
@@ -272,7 +273,7 @@ body{
     margin-bottom: 30px;
 
 }
-.lot_cards-item-text{
+.lot_cards-item-text {
     font-size: 20px;
     font-weight: 400;
 }
@@ -298,7 +299,7 @@ body{
     position: relative;
 
 }
-.about_logo::before{
+.about_logo::before {
     content: "";
     position: absolute;
     width: 240px;

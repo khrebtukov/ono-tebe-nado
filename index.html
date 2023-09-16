@@ -28,38 +28,42 @@
         </ul>
     </nav>
     <div class="logo">
-        <a href="#"><img class="logo-image" src="./images/logo-black.svg" alt="Черный логотип"/></a>
-        <!--        TODO: Логотип как ссылка-->
+        <a class="logo__link" href="#"><img class="logo-image" src="./images/logo-black.svg" alt="Черный логотип"/></a>
     </div>
     <div class="address address-justify-end">
         <address class="address_link">
             <a class="address_link-item text-underline-offset" href="tel:+99995555555">+9 999 555 5555</a>
             <a class="address_link-item text-underline-offset" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            <span class="address_link-item">наб. Принсенграхт 263-265, Амстердам</span>
+            <p class="address_link-item">наб. Принсенграхт 263-265,<br/>Амстердам</p>
         </address>
     </div>
 </header>
 <main class="main">
     <section class="content">
-        <h1 class="content_title">
-                            <span class="content_title-item_right">о<span class="letter-spacing-extended">но</span>
+        <h1 class="content__title">
+            <div class="content__title-container-right">
+                <span class="">о<span class="letter-spacing-extended">но</span>
                             </span>
-            <span class="content_title-item_center">те<span class="letter-spacing-extended">бе</span>
+            </div>
+            <div class="content__title-container_center">
+                <span class="">те<span
+                        class="letter-spacing-extended">бе</span>
                             </span>
-            <span class="content_title-item_left">
-                                <span><span class="letter-spacing-extended">н</span>aд</span>o</span>
+            </div>
+            <div class="content__title-container_left">
+                <span class="letter-spacing-extended">н<span class="letter-spacing-narrow">ад<span class="letter-spacing-reset">o</span></span></span>
+            </div>
+
         </h1>
         <div class="content_section">
-            <span class="text-section word-spacing-extended">aукцион вещей, в которые никто не верил</span>
-            <div class="button-section">
-                <button class="button">сделать ставку</button>
-            </div>
+            <p class="text-section word-spacing-extended">aукцион вещей, в которые никто не верил</p>
+            <button class="button" type="button">сделать ставку</button>
         </div>
     </section>
     <section class="lots" id="lots">
         <h2 class="lots_header">Лоты</h2>
         <div class="lot_cards">
-            <div class="lots__image lots_image-1">
+            <div class="lots__image lots_image-girl-boy">
                 <div class="lot_cards-item">
                     <h3 class="lot_cards-item-title">
                         Фильм режиссёра, который бросил киношколу
@@ -70,7 +74,7 @@
                     </p>
                 </div>
             </div>
-            <div class="lots__image lots_image-2">
+            <div class="lots__image lots_image-door">
                 <div class="lot_cards-item">
                     <h3 class="lot_cards-item-title">
                         Книга, где описан один скучный день из жизни рекламного агента
@@ -83,7 +87,7 @@
                     </p>
                 </div>
             </div>
-            <div class="lots__image lots_image-3">
+            <div class="lots__image lots_image-shape">
                 <div class="lot_cards-item">
                     <h3 class="lot_cards-item-title">
                         Картина, которую повторит даже 5-летний сын маминой подруги
@@ -96,20 +100,22 @@
                 </div>
             </div>
         </div>
-        <a class="lots_href" href="">посмотреть больше</a>
+        <div class="lots__link">
+            <a class="lots_href" href="#">посмотреть больше</a>
+        </div>
     </section>
     <section class="about" id="about">
         <div class="about_logo">
         </div>
         <div class="about_section">
             <h2 class="about_header">Об аукционе</h2>
-            <p class="about_text about_text-padding">
+            <p class="about_text">
                 Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не
                 должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина,
                 которую
                 может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
             </p>
-            <p class="about_text ">
+            <p class="about_text">
                 Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные
                 критиками.
                 Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся
@@ -122,11 +128,11 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="address-justify-start">
-        <address class="footer__address">
-            <a class="footer__address-item text-underline-offset" href="tel:+99995555555">+9 999 555 5555</a>
-            <a class="footer__address-item text-underline-offset" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            <span>наб. Принсенграхт 263-265, Амстердам</span>
+    <div class="">
+        <address class="footer__address-link">
+            <a class="text-underline-offset" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="text-underline-offset" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+            <p>наб. Принсенграхт 263-265,<br/>Амстердам</p>
         </address>
     </div>
     <nav class="footer__menu">
@@ -134,20 +140,28 @@
             <li class="bulit_none" >
                 <a class="text-decoration-none" href="#">главная</a>
             </li>
-            <li class="text-decoration-underline bulit_none">
+            <li class="bulit_none text-decoration-underline">
                 <a href="#lots">посмотреть лоты</a>
 
             </li>
-            <li class="text-decoration-underline bulit_none">
+            <li class="bulit_none text-decoration-underline bulit_none">
                 <a href="#about">об аукционе</a>
             </li>
         </ul>
     </nav>
 
     <div class="social__media">
-        <img class="social__media-logo" src="./images/yt.svg" alt="">
-        <img class="social__media-logo" src="./images/vk.svg" alt="">
-        <img class="social__media-logo" src="./images/pinterest.svg" alt="">
+        <ul class="social__media-list">
+            <li class="social__media-list-items"><a href="https://www.youtube.com/"><img class="social__media-logo"
+                                                                                         src="./images/yt.svg"
+                                                                                         alt="youtube"></a></li>
+            <li class="social__media-list-items"><a href="https://vk.com"><img class="social__media-logo"
+                                                                               src="./images/vk.svg"
+                                                                               alt="В контакте"></a></li>
+            <li class="social__media-list-items"><a href="https://ru.pinterest.com/"><img class="social__media-logo"
+                                                                                          src="./images/pinterest.svg"
+                                                                                          alt=""></a></li>
+        </ul>
     </div>
 
 </footer>

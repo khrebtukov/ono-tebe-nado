@@ -104,7 +104,7 @@ body {
     left: 0;
 }
 
-.content::after, .lots__image::after, .about_logo::after{
+.content::after, .lots__image::after, .about_logo::after {
     content: "";
     position: absolute;
     top: 0;
@@ -236,19 +236,21 @@ body {
     min-height: 450px;
 }
 
-.lots__image::before {
+.lots__image::after {
+    background: black;
+    opacity: 0.6;
     z-index: 1;
 }
 
-.lots_image-girl-boy::after {
+.lots_image-girl-boy::before {
     background: center / cover no-repeat url("../images/card-lot-01.jpg");
 }
 
-.lots_image-door::after {
+.lots_image-door::before {
     background: center / cover no-repeat url("../images/card-lot-02.jpg");
 }
 
-.lots_image-shape::after {
+.lots_image-shape::before {
     background: center / cover no-repeat url("../images/card-lot-03.jpg");
 }
 

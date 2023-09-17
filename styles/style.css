@@ -85,6 +85,7 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+    max-width: 240px;
 }
 
 .text-underline-offset {
@@ -95,7 +96,7 @@ body {
     position: relative;
 }
 
-.content::before, .lots__image::before, .about_logo::before {
+.lens::before {
     content: "";
     position: absolute;
     top: 0;
@@ -104,24 +105,23 @@ body {
     left: 0;
 }
 
-.content::after, .lots__image::after, .about_logo::after {
+.lens::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    background: rgba(0, 0, 0, 0.60);;
 }
 
 .content::before {
     background: center / cover no-repeat url("../images/cover.jpg");
-    z-index: -1;
-    opacity: .5;
+    z-index: -2;
 }
 
 .content::after {
-    background-color: black;
-    z-index: -2;
+    z-index: -1;
 }
 
 .content__title {
@@ -237,8 +237,6 @@ body {
 }
 
 .lots__image::after {
-    background: black;
-    opacity: 0.6;
     z-index: 1;
 }
 
@@ -347,7 +345,6 @@ body {
     font-style: normal;
     font-weight: 400;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 .footer__menu {
@@ -357,6 +354,7 @@ body {
 }
 
 .footer__menu-link {
+    list-style-type: none;
     text-align: center;
     font-size: 18px;
     font-style: normal;
